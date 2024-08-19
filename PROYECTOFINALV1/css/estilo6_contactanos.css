@@ -1,0 +1,96 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+}
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: black;
+    padding: 10px 20px;
+    color: rgb(39, 40, 42);
+}
+.searchbar {
+    float: right;
+    margin-top: 40px;
+}
+header img {
+    height: 100px;
+}
+header input[type="search"] {
+    margin-left: 20px;
+    padding: 5px;
+}
+nav {
+    display: flex;
+    align-items: center;
+}
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+nav ul li {
+    position: relative;
+}
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: block;
+}
+nav ul li a:hover, nav ul li:hover > a {
+    background-color: grey;
+}
+nav ul li ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #313030;
+    padding: 0;
+}
+nav ul li:hover ul {
+    display: block;
+}
+nav ul li ul li a {
+    padding: 10px;
+}
+.title-section {
+    text-align: center;
+    padding: 20px;
+    background-color: white;
+}
+.title-section h1 {
+    margin: 50px;
+}
+main {
+    display: list-item;
+    padding: 60px;
+    justify-content: left;
+    align-items: center;
+    
+}
+main img {
+    display: flex;
+    max-width: 50px;
+    float: left;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px 20px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+footer img {
+    width: 40px;
+    height: 40px;
+    margin: 10px;
+}

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nuestros Productos</title>
+    <link rel="stylesheet" href="css/estilo2_productos.css">
+    <script>
+        function filterArticles() {
+            const filter = document.getElementById('filter').value;
+            const articles = document.querySelectorAll('article');
+            articles.forEach(article => {
+                if (filter === 'all' || article.classList.contains(filter)) {
+                    article.style.display = 'block';
+                } else {
+                    article.style.display = 'none';
+                }
+            });
+        }
+        document.addEventListener('DOMContentLoaded', () => {
+            filterArticles();
+        });
+    </script>
+</head>
+<body>
+    <header>
+        <div>
+            <img src="img/Untitled design.png" alt="">
+            <input type="search" placeholder="Buscar..." class="searchbar">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="quienes_somos.html">¿Quiénes somos?</a></li>
+                <li><a href="politicas.html">Políticas</a></li>
+                <li><a href="contactanos.html">Contáctanos</a></li>
+                <li><a href="productos.html">Productos</a></li>
+                <li><a href="iniciar_sesion.html">Iniciar sesión</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="title-section">
+        <h1>Productos</h1>
+    </div>
+    <div class="filter-section">
+        <label for="filter">Filtrar por categoría:</label>
+        <select id="filter" onchange="filterArticles()">
+            <option value="all">Todos</option>
+            <option value="cat1">Dispositivos</option>
+            <option value="cat2">Perifericos</option>
+            <option value="cat3">Accesorios</option>
+            <option value="cat4">Consumibles</option>
+            <option value="cat5">Arduinos y otros</option>
+        </select>
+    </div>
+    <main>
+        <article class="cat1">
+            <img src="img/laptop.png" alt="Producto 1">
+            <h2>Laptop HP 250 G7 8GB RAM 256GB SSD</h2>
+            <p>S/. 1,899</p>
+            <a href=""><p>Ver más</p></a>
+        </article>
+        <article class="cat2">
+            <img src="img/tecla.png" alt="Producto 2">
+            <h2>Teclado Mecánico Dragonborn K630</h2>
+            <p>S/. 259</p>
+            <a href=""><p>Ver más</p></a>
+        </article>
+        <article class="cat3">
+            <img src="img/impresora.png" alt="Producto 3">
+            <h2>Impresora Hp Smart Tank 720 Multifuncional</h2>
+            <p>S/. 1.199</p>
+            <a href=""><p>Ver más</p></a>
+        </article>
+        <article class="cat4">
+            <img src="img/ethernet.png" alt="Producto 4">
+            <h2>Cable Internet Rj45 Lan Red Cat 6e Ethernet de 20 metros</h2>
+            <p>S/. 38</p>
+            <a href=""><p>Ver más</p></a>
+        </article>
+        <article class="cat2">
+            <img src="img/auris.png" alt="Producto 5">
+            <h2>Producto 5</h2>
+            <p>S/. 280</p>
+            <a href=""><p>Ver más</p></a>
+        </article>
+        <article class="cat1">
+            <img src="img/ipad.png" alt="Producto 6">
+            <h2>iPad Apple 10th generation 2022 64GB</h2>
+            <p>S/1.829</p>
+            <a href=""><p>Ver más</p></a>
+        </article>
+        <article class="cat2">
+            <img src="img/micro.png" alt="">
+            <h2>Micrófono Condensador Rohs Studio Streaming Podcast</h2>
+            <p>S/. 70</p>
+            <a href=""><p>Ver más</p></a>
+        </article>
+        <article class="cat2">
+            <img src="img/mouse.png" alt="Producto 8">
+            <h2>Logitech G Series Lightsync G203</h2>
+            <p>S/. 118</p>
+            <a href=""><p>Ver más</p></a>
+        </article>
+        <article class="cat4">
+            <img src="img/voltimetro.png" alt="Producto 9">
+            <h2>Multímetro Digital Autorango Sunshine Dt-17n</h2>
+            <p>S/. 149</p>
+            <a href=""><p>Ver más</p></a>
+        </article>
+        <article class="cat5">
+            <img src="img/arduino.png" alt="Producto 10">
+            <h2>Arduino Uno R4 Minima</h2>
+            <p>S/. 177</p>
+            <a href=""><p>Ver más</p></a>
+        </article>
+        <article class="cat1">
+            <img src="img/iphone11.png" alt="Producto 11">
+            <h2>Apple iPhone 11 64gb</h2>
+            <p>S/1.757</p>
+            <a href=""><p>Ver más</p></a>
+        </article>
+        <article class="cat2">
+            <img src="img/webcam.png" alt="Producto 12">
+            <h2>Cámara Web Webcam Redragon 1080p Gw800</h2>
+            <p>S/. 330</p>
+            <a href=""><p>Ver más</p></a>
+        </article>
+        <article class="cat3">
+            <img src="img/cam.png" alt="Producto 13">
+            <h2>Sony Alpha Cámara Profesional Full Frame Mirrorless Ilce7m3k</h2>
+            <p>S/. 6.899</p>
+            <a href=""><p>Ver más</p></a>
+        </article>
+        <article class="cat4">
+            <img src="img/cinta.png" alt="Producto 14">
+            <h2>Cinta Aislante Amarilla 19mm X 18m Truper 12503</h2>
+            <p>S/8</p>
+            <a href=""><p>Ver más</p></a>
+        </article>
+        <article class="cat5">
+            <img src="img/kit.png" alt="Producto 15">
+            <h2>Kit De Iniciación Para Arduino Uno R3 Learning Suite</h2>
+            <p>S/. 140</p>
+            <a href=""><p>Ver más</p></a>
+        </article>
+        <article class="cat1">
+            <img src="img/samsung.png" alt="Producto 15">
+            <h2>Samsung Galaxy S23</h2>
+            <p>S/2.099</p>
+            <a href=""><p>Ver más</p></a>
+        </article>
+    </main>
+    <footer>
+            <a href=""><img src="img/face.png" alt=""></a>
+            <a href=""><img src="img/insta.png" alt=""></a>
+            <a href=""><img src="img/yt.png" alt=""></a>
+            <p>@TecTeamCompany</p>
+    </footer>
+
+</body>
+</html>
